@@ -1,17 +1,27 @@
+$(document).ready(function () {
 /**
  * Javascript/jQuery Exercises: Selecting Things In The DOM!
  * Answer the following questions.
  */
-
+    console.log("Hello World");
 /**
  * Question 1:
  * When, button 1 is clicked, select all paragraphs on the page with jQuery, and changed the color to blue.
  */
+    $("#button1").click(question1);
+    function question1() {
+        $("p").css("color", "blue");
+    }
  
 /**
  * Question 2:
  * When button 1 is clicked, select all <h2> elements on this page, and change the text to say your name.
  */
+
+    $("#button1").click(question2);
+    function question2() {
+        $("h2").html("Terence");
+    }
 
 /**
  * Question 3:
@@ -50,3 +60,4 @@
  * When button 3 is clicked, select all paragraphs on the page and change the color to blue and font to Georgia.
  * Bonus: Try to do this with only one jQuery call. $("selector").css({attribute: "value", attribute: "value"});
  */
+})
